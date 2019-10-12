@@ -1,0 +1,6 @@
+{
+  "name": "BookDetails",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./BookDetails.js"
+}
