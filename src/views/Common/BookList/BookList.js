@@ -28,7 +28,7 @@ class BookList extends Component {
                 className="col-xs-4 col-sm-4 col-md-3 col-lg-2"
               >
                 <Row className="px-2">
-                  <img style={{ width: '100%', height: 'auto' }} src={item.src}></img>
+                  <img style={{ width: '100%', height: '100%' }} src={item.src}></img>
                 </Row>
                 <Row className="text-center">
                   <span className="col-md-12 py-2"> {item.name + ' ' + index}</span>
