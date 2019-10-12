@@ -24,11 +24,25 @@ const DefaultFooter = React.lazy(() => import('./DefaultFooter'));
 const DefaultHeader = React.lazy(() => import('./DefaultHeader'));
 
 class DefaultLayout extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { isLogin: false };
+  }
+
+  componentDidMount() {
+    if (localStorage.recommendation_login && localStorage.recommendation_login !== '') {
+      this.setState({ isLogin: true });
+    }
+  }
+
   loading = () => <div className="animated fadeIn pt-1 text-center">Loading...</div>;
 
   signOut(e) {
     e.preventDefault();
-    this.props.history.push('/login');
+    localStorage.removeItem('recommendation_login');
+    this.props.history.push('/home');
+    this.setState({ isLogin: false });
   }
 
   render() {
@@ -36,7 +50,7 @@ class DefaultLayout extends Component {
       <div className="app">
         <AppHeader fixed>
           <Suspense fallback={this.loading()}>
-            <DefaultHeader onLogout={e => this.signOut(e)} />
+            <DefaultHeader isLogin={this.state.isLogin} onLogout={e => this.signOut(e)} />
           </Suspense>
         </AppHeader>
         <div className="app-body">

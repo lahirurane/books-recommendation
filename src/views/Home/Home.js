@@ -3,51 +3,19 @@ import React, { Component, lazy, Suspense } from 'react';
 import { Col, Row } from 'reactstrap';
 import BookList from '../Common/BookList';
 
-const imgURL =
-  'https://images.squarespace-cdn.com/content/v1/513a230ae4b0f3422dd7d5ad/1528073552782-EFTSTXIV94Q678Q1ER20/ke17ZwdGBToddI8pDm48kJme_vyRngthM-lqQfhlIH1Zw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVHdR4tGE0fFJHT7ppaMbI8l68Pv4V3IjdRIUtf6KN3cEolyXOhr1HlgtlqrKgcoGR0/premade-dog-zombie-apocalypse-survivor-indie-e-book-cover-design.jpg?format=300w';
-const books = [
-  {
-    name: 'Book Name',
-    src: imgURL
-  },
-  {
-    name: 'Book Name',
-    src: imgURL
-  },
-  {
-    name: 'Book Name',
-    src: imgURL
-  },
-  {
-    name: 'Book Name',
-    src: imgURL
-  },
-  {
-    name: 'Book Name',
-    src: imgURL
-  },
-  {
-    name: 'Book Name',
-    src: imgURL
-  },
-  {
-    name: 'Book Name',
-    src: imgURL
-  },
-  {
-    name: 'Book Name',
-    src: imgURL
-  },
-  {
-    name: 'Book Name',
-    src: imgURL
-  }
-];
+const books = require('../../assets/data/books.json');
+
 class Home extends Component {
   constructor(props) {
     super(props);
 
     this.state = {};
+  }
+
+  componentDidMount() {
+    if (localStorage.recommendation_login && localStorage.recommendation_login !== '') {
+      window.location.href = '#/user/user-home';
+    }
   }
 
   render() {
