@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "435d6afb6daa5d63538ae08ed69a386f",
+    "revision": "b3deb4301ab846e0d10b080bb2f1026a",
     "url": "/books-recommendation/index.html"
   },
   {
@@ -20,12 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/books-recommendation/static/js/0.5a374f41.chunk.js"
   },
   {
-    "revision": "b6b34a632f44e4c860d8",
-    "url": "/books-recommendation/static/js/10.20db207c.chunk.js"
+    "revision": "df54a1a3a09d95d0bb37",
+    "url": "/books-recommendation/static/js/10.a88faaa6.chunk.js"
   },
   {
-    "revision": "ad6bc890e71c3e3de2f4",
-    "url": "/books-recommendation/static/js/11.a9fb1d56.chunk.js"
+    "revision": "1ec0367b2d363536cc43",
+    "url": "/books-recommendation/static/js/11.d8d5b1a4.chunk.js"
   },
   {
     "revision": "b7e266817d0c24dd51e6",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/books-recommendation/static/js/4.9f8d608e.chunk.js"
   },
   {
-    "revision": "a3b1cc803374f4d3b49c",
-    "url": "/books-recommendation/static/js/5.76543a78.chunk.js"
+    "revision": "f8950e014c7a86dd2dff",
+    "url": "/books-recommendation/static/js/5.ee5fe5fa.chunk.js"
   },
   {
     "revision": "6e2b009cc17963ef50c6",
@@ -68,20 +68,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/books-recommendation/static/js/7.7c448d25.chunk.js"
   },
   {
-    "revision": "9f425ded42faed17a90b",
-    "url": "/books-recommendation/static/js/8.1cd0e065.chunk.js"
+    "revision": "201ba27e7964c2e0e7ea",
+    "url": "/books-recommendation/static/js/8.0bf02f63.chunk.js"
   },
   {
-    "revision": "a4ae547373ab28737285",
-    "url": "/books-recommendation/static/js/9.4b548637.chunk.js"
+    "revision": "413d80dff124aa5f5954",
+    "url": "/books-recommendation/static/js/9.77417fe9.chunk.js"
   },
   {
     "revision": "013008b08e39e96041bb",
     "url": "/books-recommendation/static/js/main.5eabf00e.chunk.js"
   },
   {
-    "revision": "ab7ca231471d54932adf",
-    "url": "/books-recommendation/static/js/runtime-main.b9fe4a8b.js"
+    "revision": "8e2b43aec0499f153d71",
+    "url": "/books-recommendation/static/js/runtime-main.790844aa.js"
   },
   {
     "revision": "0087dce419a7376eb06c837f740d31eb",
@@ -1228,8 +1228,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/books-recommendation/static/media/lk.f54e1ef9.svg"
   },
   {
-    "revision": "98f7b511b4b5b145a23f7d8f32fbecf7",
-    "url": "/books-recommendation/static/media/logo.98f7b511.svg"
+    "revision": "7e368d0f94d90c68f92eb50593e5a658",
+    "url": "/books-recommendation/static/media/logo.7e368d0f.svg"
   },
   {
     "revision": "039251e3b986c21ad72336c16b0cf940",
