@@ -102,7 +102,7 @@ router.get('/getRecomUser/:user', (req, res) => {
 // @desc    Tests users route
 // @access  Public
 router.get('/getRecomBook/:id', (req, res) => {
-  const id = req.params.id;
+  const id = Number(req.params.id);
 
   if (id && !isNaN(id)) {
     getRecommendationsForID(id, 50)
@@ -118,6 +118,10 @@ router.get('/getRecomBook/:id', (req, res) => {
             }
           });
 
+          //remove purchase and rated items
+          indexMap = indexMap.filter(function(v) {
+            return v.data_id !== id;
+          });
           res.json({ isSuccess: true, data: indexMap });
         });
       })
