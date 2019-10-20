@@ -4,8 +4,8 @@ from flask import Flask, make_response
 from json import dumps
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction import DictVectorizer
-import numpy as np  # linear algebra
-import pandas as pd  # data processing, CSV file I/O (e.g. pd.read_csv)
+import numpy as np
+import pandas as pd
 from scipy import sparse
 import sklearn.metrics.pairwise as pw
 import json
