@@ -60,7 +60,11 @@ class Register extends Component {
                         autoComplete="new-password"
                       />
                     </InputGroup>
-                    <Button color="success" block>
+                    <Button
+                      color="success"
+                      onClick={'This Feature is not available with the prototype'}
+                      block
+                    >
                       Create Account
                     </Button>
                   </Form>

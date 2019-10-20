@@ -25,7 +25,7 @@ class BookList extends Component {
           {bookList.map((item, index) => {
             return (
               <a
-                style={{ fontWeight: 700, color: '#0c2461' }}
+                style={{ fontWeight: 700, color: '#ffffff!important' }}
                 key={item.data_id}
                 href={'#/books/details?id=' + item.data_id}
                 className="col-xs-4 col-sm-4 col-md-3 col-lg-2 py-2"

@@ -56,29 +56,8 @@ def getRecommendationForBookID(id, limit):
         pairwiseSimilarity = np.load('similarityMatrix.npy')
         reverseIndexMap = json.load(open("reverseIndexMap.json"))
 
-    def printBookDetails(bookID):
-        print("Title:", bookDF[bookDF['id'] == bookID]
-              ['original_title'].values[0])
-        print("Author:", bookDF[bookDF['id'] == bookID]['authors'].values[0])
-        print("Printing Book-ID:", bookID)
-        print("=================++++++++++++++=========================")
-
     def getTopRecommandations(bookID, limit):
         row = reverseIndexMap[str(bookID)]
-        # print(row)
-        # print("------INPUT BOOK--------")
-        # printBookDetails(int(bookID))
-        # print("-------RECOMMENDATIONS----------")
-
-        # for i in np.argsort(pairwiseSimilarity[row])[-7:-2][::-1]:
-        #     print(i)
-        #     temp = reverseIndexMap[str(i)]
-        #     print("temp",temp)
-        #     printBookDetails(temp)
-
-        # similarBookIDs = [printBookDetails(indexMap[i]) for i in np.argsort(
-        #     pairwiseSimilarity[row])[-7:-2][::-1]]
-        # print(np.argsort(pairwiseSimilarity[row])[::-1])
         return np.argsort(pairwiseSimilarity[row])[limit:][::-1]
 
     return getTopRecommandations(id, limit).tolist()

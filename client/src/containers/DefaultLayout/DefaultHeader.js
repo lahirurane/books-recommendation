@@ -12,7 +12,7 @@ import {
 import PropTypes from 'prop-types';
 
 import { AppAsideToggler, AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
-import logo from '../../assets/img/logo.svg';
+import logo from '../../assets/img/logo.png';
 import avatar from '../../assets/img/avatar.png';
 
 const propTypes = {
@@ -29,7 +29,7 @@ class DefaultHeader extends Component {
     return (
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile />
-        <AppNavbarBrand full={{ src: logo, width: 89, height: 25, alt: 'ebooks Logo' }} />
+        <AppNavbarBrand full={{ src: logo, width: 'auto', height: '100%', alt: 'ebooks Logo' }} />
         <AppSidebarToggler className="d-md-down-none" display="lg" />
 
         <Nav className="ml-auto" navbar>

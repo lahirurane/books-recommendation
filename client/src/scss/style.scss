@@ -1,14 +1,41 @@
 // If you want to override variables do it here
-@import "variables";
+@import 'variables';
 
 // Import styles
-@import "~@coreui/coreui/scss/coreui.scss";
+@import '~@coreui/coreui/scss/coreui.scss';
 
 // Temp fix for reactstrap
 @import '~@coreui/coreui/scss/_dropdown-menu-right.scss';
 
 // If you want to add something do it here
-@import "custom";
+@import 'custom';
 
 // ie fixes
-@import "ie-fix";
+@import 'ie-fix';
+
+// .main {
+//   background-image: linear-gradient(#222222, #414345);
+//   color: #ffffff;
+//   min-height: 100vh;
+// }
+// .app-footer {
+//   background-image: linear-gradient(#222222);
+//   color: #ffffff;
+// }
+// .breadcrumb {
+//   background-image: linear-gradient(#222222);
+//   color: #ffffff !important;
+// }
+// .app-header {
+//   background-image: linear-gradient(#111111);
+//   color: #ffffff !important;
+// }
+// .navbar-nav {
+//   color: #ffffff !important;
+// }
+// .button.dropdown-item {
+//   color: #ffffff !important;
+// }
+// .button:hover {
+//   background-color: #444444 !important;
+// }
